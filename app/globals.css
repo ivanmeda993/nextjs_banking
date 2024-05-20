@@ -105,12 +105,12 @@
   }
 
   /* Home */
-  .home {
-    @apply no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
+  .page {
+    @apply no-scrollbar flex-1 flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll bg-gray-25;
   }
 
-  .home-content {
-    @apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;
+  .page-content {
+    @apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll ;
   }
 
   .home-header {
@@ -155,7 +155,7 @@
 
   /* Right sidebar */
   .right-sidebar {
-    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll !important;
+    @apply no-scrollbar hidden h-full   flex-col border pb-8 border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll -mt-11 !important;
   }
 
   .profile-banner {
@@ -369,7 +369,7 @@
   }
 
   .sidebar-link {
-    @apply flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
+    @apply flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start min-w-full;
   }
 
   .sidebar-label {
